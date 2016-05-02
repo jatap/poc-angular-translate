@@ -11,7 +11,8 @@
       'restangular',
       'ui.router',
       'ui.bootstrap',
-      'toastr'
+      'toastr',
+      'pascalprecht.translate'
     ]);
 
 })();
