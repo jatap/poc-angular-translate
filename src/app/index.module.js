@@ -12,7 +12,9 @@
       'ui.router',
       'ui.bootstrap',
       'toastr',
-      'pascalprecht.translate'
+      'pascalprecht.translate',
+      'angular-translate-loader-pluggable',
+      'pocTranslate.phones'
     ]);
 
 })();

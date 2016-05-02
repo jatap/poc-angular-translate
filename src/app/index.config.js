@@ -7,7 +7,8 @@
 
   /** @ngInject */
   function config($logProvider, toastrConfig, $locationProvider,
-                  $translateProvider, LANGUAGE) {
+                  $translateProvider, translatePluggableLoaderProvider,
+                  $translatePartialLoaderProvider, LANGUAGE) {
     // Enable log
     $logProvider.debugEnabled(true);
 
@@ -22,20 +23,26 @@
     $locationProvider.html5Mode(true);
 
     // Translate
-    $translateProvider
-      .useStaticFilesLoader({
-        prefix: 'app/i18n/common-',
-        suffix: '.json'
-      })
-      .addInterpolation('$translateMessageFormatInterpolation')
-      .useMissingTranslationHandlerLog()
-      .useLoaderCache(true)
-      .preferredLanguage(LANGUAGE)
+    translatePluggableLoaderProvider
+    //$translateProvider
+      .useLoader('$translatePartialLoader', {
+        urlTemplate: 'app/i18n/{part}-{lang}.json'
+      });
+      //.useStaticFilesLoader({
+        //prefix: 'app/i18n/common-',
+        //suffix: '.json'
+      //})
+      //.addInterpolation('$translateMessageFormatInterpolation')
+      //.useMissingTranslationHandlerLog()
+      //.useLoaderCache(true)
+      //.preferredLanguage(LANGUAGE)
       /**
        * TODO - Update to sanitize mode when solved current issue in
        * angular-translator.
        */
-      .useSanitizeValueStrategy('escapeParameters');
+      //.useSanitizeValueStrategy('escapeParameters');
+    $translateProvider.useLoader('translatePluggableLoader');
+    $translatePartialLoaderProvider.addPart('common');
   }
 
 })();
