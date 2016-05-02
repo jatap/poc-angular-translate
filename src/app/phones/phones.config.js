@@ -8,7 +8,7 @@
   /** @ngInject */
   function config($translateProvider, $translatePartialLoaderProvider) {
     // Translate
-    //$translatePartialLoaderProvider.addPart('phones');
+    $translatePartialLoaderProvider.addPart('phones');
     //$translateProvider
       //.useLoader('$translatePartialLoader', {
         //urlTemplate: 'app/phones/i18n/{part}-{lang}.json'

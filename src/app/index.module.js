@@ -13,7 +13,7 @@
       'ui.bootstrap',
       'toastr',
       'pascalprecht.translate',
-      'angular-translate-loader-pluggable',
+      //'angular-translate-loader-pluggable',
       'pocTranslate.phones'
     ]);
 
