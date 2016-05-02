@@ -1,10 +1,9 @@
-/* global malarkey:false, moment:false */
+/* global LANGUAGE:false */
 (function() {
   'use strict';
 
   angular
     .module('pocTranslate')
-    .constant('malarkey', malarkey)
-    .constant('moment', moment);
+    .constant('LANGUAGE', 'en-GB');
 
 })();
