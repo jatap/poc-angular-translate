@@ -1,0 +1,11 @@
+{
+  "core": {
+    "main": {
+      "footer": "Copyright 2.016 - Julio Antúnez Tarín"
+    },
+    "menu": {
+      "home": "Home",
+      "phones": "Phones"
+    }
+  }
+}

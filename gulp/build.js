@@ -40,6 +40,7 @@ gulp.task('html', ['inject', 'partials'], function () {
 
   return gulp.src(path.join(conf.paths.tmp, '/serve/*.html'))
     .pipe($.inject(partialsInjectFile, partialsInjectOptions))
+    .pipe($.replace('../../bower_components/components-font-awesome/fonts', '../fonts'))
     .pipe($.useref())
     .pipe(jsFilter)
     .pipe($.sourcemaps.init())
