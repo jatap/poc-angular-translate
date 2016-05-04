@@ -6,7 +6,8 @@
     .config(config);
 
   /** @ngInject */
-  function config($translateProvider, translatePluggableLoaderProvider) {
+  function config($translateProvider, translatePluggableLoaderProvider,
+                  $translatePartialLoaderProvider) {
     // Translate
     $translateProvider
       .useLoader('translatePluggableLoader')
@@ -19,6 +20,12 @@
        */
       .useSanitizeValueStrategy('escapeParameters')
       .preferredLanguage('en-GB');
+
+    translatePluggableLoaderProvider
+      .useLoader('$translatePartialLoader', {
+        urlTemplate: 'app/core/i18n/{lang}.json'
+      });
+    $translatePartialLoaderProvider.addPart('home');
   }
 
 })();
