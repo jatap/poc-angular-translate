@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('pocTranslate.phones', [
+    .module('pocTranslate.home', [
       'ngCookies',
       'ngSanitize',
       'ui.router',
@@ -12,4 +12,5 @@
     ]);
 
 })();
+
 

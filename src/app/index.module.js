@@ -12,8 +12,8 @@
       'ui.router',
       'ui.bootstrap',
       'toastr',
-      'pascalprecht.translate',
-      //'angular-translate-loader-pluggable',
+      'pocTranslate.core',
+      'pocTranslate.home',
       'pocTranslate.phones'
     ]);
 

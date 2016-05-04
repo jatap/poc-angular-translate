@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('pocTranslate.phones')
+    .module('pocTranslate.home')
     .config(config);
 
   /** @ngInject */
@@ -11,9 +11,9 @@
     // Translate
     translatePluggableLoaderProvider
       .useLoader('$translatePartialLoader', {
-        urlTemplate: 'app/phones/i18n/{lang}.json'
+        urlTemplate: 'app/home/i18n/{lang}.json'
       });
-    $translatePartialLoaderProvider.addPart('phones');
+    $translatePartialLoaderProvider.addPart('home');
   }
 
 })();

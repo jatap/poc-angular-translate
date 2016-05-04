@@ -6,7 +6,7 @@
 
     beforeEach(module('pocTranslate'));
     beforeEach(inject(function(_$controller_) {
-      vm = _$controller_('MainController');
+      vm = _$controller_('HomeController');
     }));
 
     it('should be created successfully', function() {

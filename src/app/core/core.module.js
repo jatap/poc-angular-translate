@@ -2,14 +2,14 @@
   'use strict';
 
   angular
-    .module('pocTranslate.phones', [
+    .module('pocTranslate.core', [
       'ngCookies',
       'ngSanitize',
       'ui.router',
-      'pocTranslate.core',
       'pascalprecht.translate',
       'angular-translate-loader-pluggable'
     ]);
 
 })();
+
 

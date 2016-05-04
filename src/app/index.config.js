@@ -6,9 +6,7 @@
     .config(config);
 
   /** @ngInject */
-  function config($logProvider, toastrConfig, $locationProvider,
-                  $translateProvider,
-                  $translatePartialLoaderProvider, LANGUAGE) {
+  function config($logProvider, toastrConfig, $locationProvider) {
     // Enable log
     $logProvider.debugEnabled(true);
 
@@ -21,28 +19,6 @@
 
     // Pretty URL
     $locationProvider.html5Mode(true);
-
-    // Translate
-    //translatePluggableLoaderProvider
-    //$translateProvider.useLoader('translatePluggableLoader');
-    $translatePartialLoaderProvider.addPart('common');
-    $translateProvider
-      .useLoader('$translatePartialLoader', {
-        urlTemplate: 'app/i18n/{part}-{lang}.json'
-      })
-      //.useStaticFilesLoader({
-        //prefix: 'app/i18n/common-',
-        //suffix: '.json'
-      //})
-      .addInterpolation('$translateMessageFormatInterpolation')
-      .useMissingTranslationHandlerLog()
-      .useLoaderCache(true)
-      .preferredLanguage(LANGUAGE)
-      /**
-       * TODO - Update to sanitize mode when solved current issue in
-       * angular-translator.
-       */
-      .useSanitizeValueStrategy('escapeParameters');
   }
 
 })();

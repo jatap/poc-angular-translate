@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('pocTranslate')
+    .module('pocTranslate.home')
     .config(routerConfig);
 
   /** @ngInject */
@@ -10,12 +10,13 @@
     $stateProvider
       .state('home', {
         url: '/',
-        templateUrl: 'app/main/main.html',
-        controller: 'MainController',
-        controllerAs: 'main'
+        templateUrl: 'app/home/home.html',
+        controller: 'HomeController',
+        controllerAs: 'home'
       });
 
     $urlRouterProvider.otherwise('/');
   }
 
 })();
+
