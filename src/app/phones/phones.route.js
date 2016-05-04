@@ -2,20 +2,21 @@
   'use strict';
 
   angular
-    .module('pocTranslate')
+    .module('pocTranslate.phones')
     .config(routerConfig);
 
   /** @ngInject */
   function routerConfig($stateProvider, $urlRouterProvider) {
     $stateProvider
-      .state('home', {
-        url: '/',
-        templateUrl: 'app/main/main.html',
-        controller: 'MainController',
-        controllerAs: 'main'
+      .state('phones', {
+        url: '/phones',
+        templateUrl: 'app/phones/phones.html',
+        controller: 'PhonesController',
+        controllerAs: 'phones'
       });
 
     $urlRouterProvider.otherwise('/');
   }
 
 })();
+

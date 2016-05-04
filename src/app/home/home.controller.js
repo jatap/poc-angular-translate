@@ -3,8 +3,8 @@
 
   angular
     .module('pocTranslate')
-    .controller('MainController', MainController);
+    .controller('HomeController', HomeController);
 
   /** @ngInject */
-  function MainController() {}
+  function HomeController() {}
 })();
