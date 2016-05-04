@@ -1,5 +1,16 @@
+$dark-success: darken($brand-success, 15%);
+
 .acme-navbar-text{
   color: white;
+}
+acme-navbar .navbar {
+  margin-bottom: 0;
+}
+.navbar-inverse .navbar-brand {
+  color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: $brand-success;
 }
 
 a {
@@ -10,8 +21,4 @@ h1 {
   font-size: 2em;
   margin: 0;
   line-height: 1.25em;
-}
-
-a:hover, a:focus {
-  color: greenyellow;
 }

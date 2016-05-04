@@ -1,0 +1,14 @@
+{
+  "home": {
+    "main": {
+      "header": "PoC",
+      "subheader": "AngularJS Translate",
+      "advice": "Sample content to be translated using <code>angular-translate</code> module.",
+      "footer": "Copyright 2.016 - Julio Antúnez Tarín"
+    },
+    "menu": {
+      "home": "Home",
+      "phones": "Phones"
+    }
+  }
+}
