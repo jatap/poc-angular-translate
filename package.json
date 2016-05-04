@@ -1,6 +1,6 @@
 {
   "name": "pocTranslate",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "dependencies": {
     "angular-translate-loader-pluggable": "^1.1.0"
   },
