@@ -1,4 +1,11 @@
 
+1.0.1 / 2016-05-04
+==================
+
+  * Improve modularization.
+  * Add a vendor folder for extra files (raw mode).
+  * Fix layouts.
+
 1.0.0 / 2016-05-04
 ==================
 
